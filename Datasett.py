@@ -11,4 +11,3 @@ plt.plot(x, y)
 plt.xlabel("Dato")
 plt.ylabel("Pris")
 plt.show()
-1
