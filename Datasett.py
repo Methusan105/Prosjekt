@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib as plt
-url="/co2_mm_gl.csv"
+url="./co2_mm_gl.csv"
 
 df= pd.read_csv(url,index_col=0)
 df 
