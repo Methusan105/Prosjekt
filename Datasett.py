@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib as plt
-url="/co2_mm_gl.csv"
+url="https://raw.githubusercontent.com/Methusan105/Prosjekt/main/co2_annmean_gl.csv"
 
 df= pd.read_csv(url,index_col=0)
 df 
