@@ -8,12 +8,11 @@ import numpy as np
 
 url = "https://raw.githubusercontent.com/Methusan105/Prosjekt/main/Data.csv"
 df = pd.read_csv(url, index_col=0)
-
 x = df["year"]
 y = df["gjennomsnitt"]
 
 # Utfør lineær regresjon
-poly = PolynomialFeatures(degree=1)
+poly = PolynomialFeatures(degree=2)
 X = poly.fit_transform(np.array(x).reshape(-1, 1))
 model = LinearRegression()
 model.fit(X, y)
