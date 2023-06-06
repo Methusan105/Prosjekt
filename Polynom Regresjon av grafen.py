@@ -21,8 +21,9 @@ y_pred = model.predict(X)
 
 # Plotter data og regresjonslinje
 plt.scatter(x, y, label="CO2-Nivåer")
-plt.plot(x, y_pred, color='red', label="Regresjonslinje")
+plt.plot(x, y_pred, color='red', label="Polynom Regresjonslinje")
 plt.xlabel("År")
 plt.ylabel("Gjennomsnitt")
 plt.legend()
+plt.grid()
 plt.show()
